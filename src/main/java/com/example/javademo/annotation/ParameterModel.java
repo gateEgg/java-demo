@@ -7,11 +7,10 @@ import java.lang.annotation.Target;
 
 /**
  * @author jiesi
- * @Description 我的注解
- * @Date 2021/8/9 3:58 下午
+ * @Description TODO
+ * @Date 2021/11/4 10:56 上午
  */
-@Target({ElementType.TYPE, ElementType.METHOD})
+@Target(value = ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface MyAnnotation {
-    String value() default "";
+public @interface ParameterModel {
 }
